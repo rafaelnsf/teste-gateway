@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Teste Lifty</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <!--Google fonts links-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Sections -->
+    <section id="price" class="price sections">
+      <div class="head_title text-center">
+        <h1>Escolha o metodo de pagamento para testar</h1>
+      </div>
+      <div class="cd-pricing-container cd-has-margins">
+        <ul class="cd-pricing-list">
+          <li>
+            <ul class="cd-pricing-wrapper">
+              <li data-type="monthly" class="is-visible">
+                <header class="cd-pricing-header">
+                  <h2>Pag Seguro</h2>
+
+                  <div class="cd-price">
+                    <span class="cd-currency">R$</span>
+                    <span class="cd-value">10</span>
+                    <span class="cd-duration">mês</span>
+                  </div>
+                </header>
+
+                <footer class="cd-pricing-footer">
+                  <a class="cd-select" href="#">Assinar</a>
+                </footer>
+                <!-- .cd-pricing-footer -->
+              </li>
+            </ul>
+            <!-- .cd-pricing-wrapper -->
+          </li>
+
+          <li>
+            <ul class="cd-pricing-wrapper">
+              <li data-type="monthly" class="is-visible">
+                <header class="cd-pricing-header">
+                  <h2>Mercado Pago</h2>
+
+                  <div class="cd-price">
+                    <span class="cd-currency">R$</span>
+                    <span class="cd-value">10</span>
+                    <span class="cd-duration">mês</span>
+                  </div>
+                </header>
+
+                <footer class="cd-pricing-footer">
+                  <a mp-mode="dftl" href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=2c93808480dc88330180dcc748090007" name="MP-payButton" class="cd-select">Assinar</a>
+                </footer>
+                <!-- .cd-pricing-footer -->
+              </li>
+            </ul>
+            <!-- .cd-pricing-wrapper -->
+          </li>
+        </ul>
+        <!-- .cd-pricing-list -->
+      </div>
+      <!-- .cd-pricing-container -->
+    </section>
+    <script type="text/javascript">
+      (function () {
+        function $MPC_load() {
+          window.$MPC_loaded !== true &&
+            (function () {
+              var s = document.createElement("script");
+              s.type = "text/javascript";
+              s.async = true;
+              s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
+              var x = document.getElementsByTagName("script")[0];
+              x.parentNode.insertBefore(s, x);
+              window.$MPC_loaded = true;
+            })();
+        }
+        window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent("onload", $MPC_load) : window.addEventListener("load", $MPC_load, false)) : null;
+      })();
+    </script>
+  </body>
+</html>
